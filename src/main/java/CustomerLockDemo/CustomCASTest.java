@@ -20,7 +20,7 @@ public class CustomCASTest{
         }
         integerLatch.await();
         end=System.currentTimeMillis();
-        System.out.println(atomicInteger.get()+"   cost time:"+(end-start));
+        System.out.println(atomicInteger.get()+"   AtomicInteger cost time:"+(end-start));
 
 
 
@@ -33,7 +33,7 @@ public class CustomCASTest{
         }
         fcyLatch.await();
         end=System.currentTimeMillis();
-        System.out.println(fcyAtomicInteger.get()+"   cost time:"+(end-start));
+        System.out.println(fcyAtomicInteger.get()+"   FcyAtomicInteger cost time:"+(end-start));
 
 
     }
